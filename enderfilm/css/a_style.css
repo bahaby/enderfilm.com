@@ -1,0 +1,339 @@
+*{
+	margin: 0;
+	padding:0;
+	font-size: 12px;
+	font-family: arial;
+	text-decoration: none;
+}
+ul li{
+	list-style: none;
+}
+body{
+	width: 960px;
+	margin:0 auto;
+}
+#header{
+	width: 100%;
+	height: 40px;
+	background-color: black;
+	border-radius:0 0 5px 5px;
+}
+#header ul li a{
+	background-color: white;
+	height: 26px;
+	line-height: 26px;
+	display: table;
+	padding: 0 10px;
+	border-radius: 5px;
+	color: black;
+	font-weight: bold;
+}
+#header .son li{
+	float: right;
+	margin:7px 10px 0 0;
+}
+#header .ilk li{
+	float: left;
+	margin:7px 0 0 10px;
+}
+label.error{
+	position: absolute;
+	z-index: 1001;
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	height: 20px;
+	left: 0;
+	top: 22px;
+	opacity: 0.7;
+	line-height: 20px;
+	padding: 0 6px;
+	border-radius: 5px;
+}
+.film_bilgi li label.error{
+	left: 45px;
+	top: 20px;
+}
+.film_konu li label.error{
+	left: 10px;
+	top: 77px;
+}
+.bot_link li{
+	float: left;
+	position: relative;
+	margin: 5px 0 0 5px;
+}
+.bot_link li input{
+	height: 17px;
+	width: 349px;
+}
+.bot_link li:nth-child(3) input{
+	width: 150px;
+}
+.bot_link li button{
+	width: 80px;
+	margin-top: -2px;
+}
+.resim{
+	clear: both;
+	float: left;
+}
+.resim li{
+	height: 22px;
+	float: left;
+	margin: 5px 0 0 5px;
+	position: relative;
+}
+.resim li:first-child input{
+	width: 200px;
+	height: 22px;
+}
+.resim li:last-child input{
+	height: 17px;
+	width: 740px;
+}
+.film_tur{
+	clear: both;
+	margin-top: 5px;
+	float: left;
+}
+.film_tur li select{
+	width: 110.7px;
+	margin-left: 5px;
+}
+.film_bilgi{
+	clear: both;
+	float: left;
+	margin-top: 5px;
+}
+.film_bilgi li{
+	float: left;
+	margin-left: 5px;
+	position: relative;
+}
+.film_bilgi li .f_bilgi{
+	width: 40px;
+	float: left;
+	padding-left:5px; 
+	line-height: 20px;
+}
+.film_bilgi li input{
+	width: 105px;
+}
+.film_konu{
+	clear: both;
+	margin-top: 6px;
+	float: left;
+}
+.film_konu li{
+	position: relative;
+}
+.film_konu li textarea{
+	width: 947px;
+	height: 100px;
+	margin-left: 5px;
+	resize: none;
+}
+.yapimci{
+	clear: both;
+	margin-top: 5px;
+	float: left;
+}
+.yapimci li {
+	float: left;
+}
+.yapimci li input{
+	width: 468px;
+	margin-left: 5px;
+}
+.link{
+	clear: both;
+	margin-top: 5px;
+	float: left;
+}
+.link li {
+	float: left;
+}
+.link li input{
+	width: 468px;
+	margin-left: 5px;
+}
+.dublaj_link{
+	clear: both;
+	margin-top: 8px;
+	float: left;
+}
+.dublaj_link li select{
+	margin-bottom: 5px;
+	width: 200px;
+	margin-left: 5px;
+}
+.dublaj_link li input{
+	width: 736px;
+	margin-left: 5px;
+}
+.altyazi_link{
+	clear: both;
+	float: left;
+	margin-top: 3px;
+	margin-bottom: 10px;
+}
+.altyazi_link li select{
+	margin-bottom: 5px;
+	width: 200px;
+	margin-left: 5px;
+}
+.altyazi_link li input{
+	width: 736px;
+	margin-left: 5px;
+}
+.gonder{
+	clear: both;
+	width: 960px;
+}
+.gonder input{
+	height: 40px;
+	width: 800px;
+	display: table;
+	margin: 0 auto;
+	background-color: white;
+	color: black;
+	border:3px solid black;
+	border-radius: 5px;
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+}
+.gonder input:hover{
+	box-shadow: 0 0 10px black;
+}
+.izleust{
+    width: 100%;
+    min-width: 960px;
+    height: 245px;
+    position: relative;
+    overflow: hidden;
+	margin-bottom: 10px;
+}
+.izleust .ustarka{
+	filter: blur(20px);
+	width: 110%;
+	height: auto;
+	position: absolute;
+	z-index: -9999;
+	margin: -30% -5% 0 -5%;
+}
+.izleust .ust {
+    width: 100%;
+}
+.ust .ustic{
+	background: transparent url("../img/nokta.png") repeat scroll left top;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.ustic .izlebaslik{
+	margin: 40px auto 0 auto;
+	width: 960px;
+	height: 205px;
+	background-color: rgba(0, 0, 0, 0.8);
+	position: relative;
+	color: white;
+}
+.izlebaslik .izlebresim{
+	position: absolute;
+	margin: -28px 0 0 15px;
+}
+.izlebaslik .izlebresim img{
+	border:1px solid black;
+	box-shadow: 0 0 10px black;
+}
+.izlebaslik .baslikorta{
+	margin-left: 175px;
+	width: 675px;
+	height: 205px;
+	padding-right: 10px;
+	float: left;
+}
+.izlebaslik .baslikbilgi{
+	width: 100px;
+	height: 205px;
+	float: right;
+	background-color: rgba(0, 0, 0, .5);
+}
+.baslikbilgi p{
+	height: 50px;
+	text-align: center;
+	border-bottom: 1px solid black;
+}
+.baslikbilgi p:first-child{
+	border-top: 1px solid black;
+}
+.baslikbilgi b{
+	display: block;
+	font-size: 18px;
+	line-height: 28px;
+	color: #bf360c;
+}
+.baslikbilgi ul li{
+	margin: 12px 0 0 18px;
+}
+.baslikbilgi ul li i:first-child{
+	margin-right: 12px;
+}
+.baslikorta h1{
+	font-size: 20px;
+	margin-top: 5px;
+}
+.baslikust li{
+	background-color: rgba(0, 0, 0, .5);
+	height: 25px;
+	line-height: 25px;
+	padding: 0 5px;
+	margin:5px 10px 0 0;
+	border-radius: 5px;
+	float: left;
+}
+.baslikorta .baslikaciklama{
+	margin: 5px 0;
+	float: left;
+	font-size: 14px;
+	height: 101px;
+	line-height: 17px;
+	font-weight: bold;
+	overflow: hidden;
+}
+.basliktur li{
+	background-color: rgba(0, 0, 0, .5);
+	height: 25px;
+	line-height: 25px;
+	padding: 0 5px;
+	margin-right: 10px;
+	border-radius: 5px;
+	float: left;
+}
+.iframe{
+	clear: both;
+}
+.iframe ul li{
+	width: 184px;
+	height: 140px;
+	float: left;
+	margin:0 10px 10px 0;
+}
+.iframe ul li:last-child{
+	margin-right: 0;
+}
+.iframe ul li p{
+	width: 184px;
+	height: 20px;
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	line-height: 20px;
+	text-align: center;
+}
+.iframe ul li iframe{
+	width: 184px;
+	height: 120px;
+}

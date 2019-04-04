@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin.php
+Disallow: /ekle.php
+Disallow: /duzenle.php
+Disallow: /bot.php
